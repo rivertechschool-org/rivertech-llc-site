@@ -30,8 +30,8 @@ def render(name,title,description,body):
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{html.escape(title)} | River Tech LLC</title><meta name="description" content="{html.escape(description,quote=True)}">
 <meta name="robots" content="{robots}">{canonical}<meta name="theme-color" content="#104472">
-<link rel="icon" href="{base}assets/images/mark.svg"><link rel="stylesheet" href="{base}assets/css/redesign.css?v=20261024-flow">
-<script src="{base}assets/js/redesign.js?v=20261024-flow" defer></script></head><body data-page="{name}">
+<link rel="icon" href="{base}assets/images/mark.svg"><link rel="stylesheet" href="{base}assets/css/redesign.css?v=20261024-readable">
+<script src="{base}assets/js/redesign.js?v=20261024-readable" defer></script></head><body data-page="{name}">
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header"><div class="wrap header-inner"><a class="wordmark" href="{base}index.html" aria-label="River Tech LLC home">RIVER TECH <span>· LLC</span></a><nav class="primary-links" aria-label="Main navigation">{nav}</nav><button class="site-menu-toggle" type="button" aria-haspopup="dialog" aria-controls="site-menu" aria-expanded="false">Menu <span aria-hidden="true">☰</span></button></div></header>
 {menu}
