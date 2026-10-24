@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://rivertech.llc/tink-town/sitemap.xml

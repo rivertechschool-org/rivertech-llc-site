@@ -22,3 +22,7 @@ The earlier concept, licensing and flagship addresses redirect to the relevant R
 GitHub Pages serves the repository root from `main`, using the custom domain in `CNAME`. Build with `--publish` before committing generated files. Keep the accepted content intact and check the actual live site after deployment, including mobile layouts and interactions.
 
 Contact forms prepare an email draft in the visitor's own mail application; they do not submit to a form backend. Do not commit credentials, private records or local review files.
+
+## Tink Town
+
+The Tink Town website is served at https://rivertech.llc/tink-town/. The `tink-town/` folder contains its public HTML and assets. Both sites link to each other. Keep the subsite when rebuilding or deploying this repository.
