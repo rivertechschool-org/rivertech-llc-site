@@ -25,4 +25,4 @@ Contact forms prepare an email draft in the visitor's own mail application; they
 
 ## Tink Town
 
-The Tink Town website is served at https://rivertech.llc/tink-town/. The `tink-town/` folder contains its public HTML and assets. Both sites link to each other. Keep the subsite when rebuilding or deploying this repository.
+The Tink Town website is independently hosted at https://tink.town/ from `rivertechschool-org/tink-town-site`. Both sites link to each other. The `tink-town/` folder here contains only redirects for old links; do not restore the former subsite or its assets.
