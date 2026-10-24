@@ -1,41 +1,24 @@
-# rivertech.llc
+# River Tech LLC website
 
-Website for River Tech LLC — Idaho LLC holding the River Tech school concept,
-curriculum architecture, and brand.
+Public website: https://rivertech.llc
 
-**Live:** https://rivertech.llc (when DNS is live)
-**Flagship school site:** https://rivertechschool.com (separate project)
+River Tech LLC presents its two sister brands, River Tech and Tink Town, and opportunities for schools, businesses, community partners and investors.
 
-## Structure
+## Build
 
-- `index.html` — homepage
-- `pages/concept.html` — The full model
-- `pages/story.html` — Origin story (2009 → fire → recovery)
-- `pages/flagship.html` — Post Falls school spotlight
-- `pages/licensing.html` — Licensing hub-and-spoke
-- `pages/contact.html` — Inquiry form
-- `404.html` — Not-found page
-- `assets/css/base.css` + `assets/css/style.css` — Stylesheets
-- `assets/js/main.js` — Mobile menu, smooth scroll, mailto form handler
-- `assets/images/` — Photos from the flagship school
-- `CNAME` — GitHub Pages custom domain (`rivertech.llc`)
-- `sitemap.xml`, `robots.txt` — Search engine config
+- `python3 build_site.py` builds an unindexed local preview.
+- `python3 build_site.py --publish` builds the public HTML, canonical URLs, robots.txt and sitemap.
 
-## Stack
+Content is maintained in `build_site.py`, `experience.py`, `opportunity_content.py`, `concept_story.py`, `tink_growth.py` and `phase_budgets.py`. Styles and interactions are in `assets/css/redesign.css` and `assets/js/redesign.js`.
 
-Plain HTML, CSS, JavaScript. No frameworks, no build step, no dependencies.
-Edit files directly, commit, push — GitHub Pages redeploys automatically.
+## Pages
 
-## Editing
+Home; River Tech; Tink Town; Investing; Partnerships; Church & Community; Dream Big; Our Story; Contact; Policies.
 
-Every page uses the same sidebar + topbar + mobile overlay. These are copied
-into each page's HTML (no templating). If you change one, change the others
-to match — or ask an AI agent to do it for you.
+The earlier concept, licensing and flagship addresses redirect to the relevant River Tech page sections.
 
-## Hosting
+## Publication
 
-GitHub Pages. Deploy is automatic on push to `main`.
+GitHub Pages serves the repository root from `main`, using the custom domain in `CNAME`. Build with `--publish` before committing generated files. Keep the accepted content intact and check the actual live site after deployment, including mobile layouts and interactions.
 
-## Contact
-
-hello@rivertech.llc
+Contact forms prepare an email draft in the visitor's own mail application; they do not submit to a form backend. Do not commit credentials, private records or local review files.
